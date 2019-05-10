@@ -1,155 +1,260 @@
-<!DOCTYPE html>
 <html lang="zh-cn">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>面试知识点仓库-夜学网</title>
-    <style>
-        .logo {
-            width: 300px;
-            height: 150px;
-            margin: 40px auto 20px;
+    <title>HTML5 云朵效果</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body {
+            background-color: #326696;
+            margin: 0px;
+            overflow: hidden;
+            font-family: Monospace;
+            font-size: 13px;
             text-align: center;
-            color: #484848;
-            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
         }
 
-        .logo img {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto;
-            margin-top: 20px;
-            display: block;
+        a {
+            color: #0078ff;
         }
-
-        .url {
+        .float-btn{
+            width: 100%;
+            height: 60px;
             text-align: center;
-            line-height: 20px;
-            color: #999;
+            position: fixed;
+            top: 20%;
+            z-index: 10;
+            perspective: 300px;
         }
-        .button{
-            text-align: center;
-            height: 100px;
-            margin-bottom: 10px;
-            margin-top: 30px;
-        }
-        .button a{
+        .float-btn a{
             display: inline-block;
-            width: 180px;
-            height: 40px;
-            line-height: 40px;
-            cursor: pointer; 
             text-decoration: none;
-            margin-right: 30px;
-            border-radius: 12px;
-            margin-bottom: 10px;
-        }
-        .button a:hover{
-            color: #fff;
-            font-weight: 700;
-            border: 1px solid #4fc08d;
-            background: #4fc08d;
-        }
-        .button a{
-            color: #4fc08d;
-            font-weight: 700;
-            border: 1px solid #4fc08d;
-        }
-
-        #logo {
-            -webkit-transition-property: -webkit-transform;
-            -webkit-transition-duration: 2s;
-            -moz-transition-property: -moz-transform;
-            -moz-transition-duration: 2s;
-            -webkit-animation: rotate 8s linear infinite;
-            -moz-animation: rotate 8s linear infinite;
-            -o-animation: rotate 8s linear infinite;
-            animation: rotate 8s linear infinite;
-        }
-        .detail{
-            border-top: 1px solid #ccc;
-            display: flex;
-            padding: 0 20px;
-        }
-        .detail>div{
-            padding:0 5%;
-        }
-        .detail h3{
+            width: 170px;
+            height: 50px;
+            font-size: 16px;
+            line-height: 50px;
             text-align: center;
-            color: #4fc08d;
+            color: #fff;
+            background: #2dc8f9;
+            border-radius: 8px;
+            margin-right: 10px;
+            transition: 1s;
+            position: relative;
+            transform-style:preserve-3d;
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+            transform-origin: left bottom;
+            -webkit-transform-origin: left bottom;
         }
-        .detail p{
-            color: #999;
-            text-indent: 2em;
+        .float-btn a span{
+            display: block;
+            position: absolute;
+            bottom: -25px;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            color: #484848;
+            background: #ccc;
+            border: 2px solid #cea80f;
+            box-sizing: border-box;
+            transform: translateZ(-25px) rotate3d(1,0,0,90deg)
         }
-        @-webkit-keyframes rotate {
-            from {
-                -webkit-transform: rotate(0deg)
-            }
-
-            to {
-                -webkit-transform: rotate(360deg)
-            }
-        }
-
-        @-moz-keyframes rotate {
-            from {
-                -moz-transform: rotate(0deg)
-            }
-
-            to {
-                -moz-transform: rotate(359deg)
-            }
-        }
-
-        @-o-keyframes rotate {
-            from {
-                -o-transform: rotate(0deg)
-            }
-
-            to {
-                -o-transform: rotate(359deg)
-            }
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotate(0deg)
-            }
-
-            to {
-                transform: rotate(359deg)
-            }
+        .float-btn a:hover{
+            transform: rotate3d(1,0,0,-90deg)
         }
     </style>
 </head>
 
 <body>
-    <div class="logo">
-        面试知识点仓库
-        <img id="logo" src="./aiyexue.svg" alt="">
-    </div>
-    <p class="url">夜学网-www.aiyexue.com</p>
-    <div class="button">
-        <a href="/docs/web">前端</a>
-        <a href="/docs/java">JAVA</a>
-        <a href="/docs/Android">安卓</a>
-    </div>
-    <div class="detail">
-            <div>
-                <h3>只讲知识点</h4>
-                <p>该仓库资源没有大篇幅的讲解面试题，因为我们认为只有弄懂了各个知识点，才能解决面试题。所以以搜集面试知识点为核心，帮助大家能在平时学习中查漏补缺。</p>
-            </div>
-            <div>
-                    <h3>从初级到高级</h4>
-                    <p>该仓库资源涉及的知识点有基础，有深入，也有源码解析，网络知识。是你学习的好帮手，助你面试披荆斩棘。</p>
-            </div>
-            <div>
-                    <h3>持续更新</h4>
-                    <p>该仓库会持续更新下去，内容将会涵盖计算机通识，前端，后端，运维，系统设计，区块链等等。各位的支持是我们更新的动力，同时也欢迎有能力的小伙伴加入我们。</p>
-            </div>
+    <script type="text/javascript" src="assets/three.min.js"></script>
+    <script type="text/javascript" src="assets/Detector.js"></script>
+    <script id="vs" type="x-shader/x-vertex">
+
+        varying vec2 vUv;
+
+			void main() {
+				vUv = uv;
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+
+			}
+
+		</script>
+
+    <script id="fs" type="x-shader/x-fragment">
+
+        uniform sampler2D map;
+
+			uniform vec3 fogColor;
+			uniform float fogNear;
+			uniform float fogFar;
+
+			varying vec2 vUv;
+
+			void main() {
+
+				float depth = gl_FragCoord.z / gl_FragCoord.w;
+				float fogFactor = smoothstep( fogNear, fogFar, depth );
+
+				gl_FragColor = texture2D( map, vUv );
+				gl_FragColor.w *= pow( gl_FragCoord.z, 20.0 );
+				gl_FragColor = mix( gl_FragColor, vec4( fogColor, gl_FragColor.w ), fogFactor );
+
+			}
+
+		</script>
+
+    <script type="text/javascript">
+        if (!Detector.webgl) Detector.addGetWebGLMessage();
+
+        var container;
+        var camera, scene, renderer;
+        var mesh, geometry, material;
+
+        var mouseX = 0,
+            mouseY = 0;
+        var start_time = Date.now();
+
+        var windowHalfX = window.innerWidth / 2;
+        var windowHalfY = window.innerHeight / 2;
+
+        init();
+
+        function init() {
+
+            container = document.createElement('div');
+            document.body.appendChild(container);
+
+            // Bg gradient
+
+            var canvas = document.createElement('canvas');
+            canvas.width = 32;
+            canvas.height = window.innerHeight;
+
+            var context = canvas.getContext('2d');
+
+            var gradient = context.createLinearGradient(0, 0, 0, canvas.height);
+            gradient.addColorStop(0, "#1e4877");
+            gradient.addColorStop(0.5, "#4584b4");
+
+            context.fillStyle = gradient;
+            context.fillRect(0, 0, canvas.width, canvas.height);
+
+            container.style.background = 'url(' + canvas.toDataURL('image/png') + ')';
+            container.style.backgroundSize = '32px 100%';
+
+            //
+
+            camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 3000);
+            camera.position.z = 6000;
+
+            scene = new THREE.Scene();
+
+            geometry = new THREE.Geometry();
+            THREE.ImageUtils.crossOrigin ="";
+            var texture = THREE.ImageUtils.loadTexture('cloud10.png', null, animate);
+            texture.magFilter = THREE.LinearMipMapLinearFilter;
+            texture.minFilter = THREE.LinearMipMapLinearFilter;
+
+            var fog = new THREE.Fog(0x4584b4, -100, 3000);
+
+            material = new THREE.ShaderMaterial({
+
+                uniforms: {
+
+                    "map": {
+                        type: "t",
+                        value: texture
+                    },
+                    "fogColor": {
+                        type: "c",
+                        value: fog.color
+                    },
+                    "fogNear": {
+                        type: "f",
+                        value: fog.near
+                    },
+                    "fogFar": {
+                        type: "f",
+                        value: fog.far
+                    },
+
+                },
+                vertexShader: document.getElementById('vs').textContent,
+                fragmentShader: document.getElementById('fs').textContent,
+                depthWrite: false,
+                depthTest: false,
+                transparent: true
+
+            });
+
+            var plane = new THREE.Mesh(new THREE.PlaneGeometry(64, 64));
+
+            for (var i = 0; i < 8000; i++) {
+
+                plane.position.x = Math.random() * 1000 - 500;
+                plane.position.y = -Math.random() * Math.random() * 200 - 15;
+                plane.position.z = i;
+                plane.rotation.z = Math.random() * Math.PI;
+                plane.scale.x = plane.scale.y = Math.random() * Math.random() * 1.5 + 0.5;
+
+                THREE.GeometryUtils.merge(geometry, plane);
+
+            }
+
+            mesh = new THREE.Mesh(geometry, material);
+            scene.add(mesh);
+
+            mesh = new THREE.Mesh(geometry, material);
+            mesh.position.z = -8000;
+            scene.add(mesh);
+
+            renderer = new THREE.WebGLRenderer({
+                antialias: false
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            container.appendChild(renderer.domElement);
+
+            document.addEventListener('mousemove', onDocumentMouseMove, false);
+            window.addEventListener('resize', onWindowResize, false);
+
+        }
+
+        function onDocumentMouseMove(event) {
+
+            mouseX = (event.clientX - windowHalfX) * 0.25;
+            mouseY = (event.clientY - windowHalfY) * 0.15;
+
+        }
+
+        function onWindowResize(event) {
+
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(window.innerWidth, window.innerHeight);
+
+        }
+
+        function animate() {
+
+            requestAnimationFrame(animate);
+
+            position = ((Date.now() - start_time) * 0.03) % 8000;
+
+            camera.position.x += (mouseX - camera.position.x) * 0.01;
+            camera.position.y += (-mouseY - camera.position.y) * 0.01;
+            camera.position.z = -position + 8000;
+
+            renderer.render(scene, camera);
+
+        }
+    </script>
+    <div
+        style="background: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAOvCAYAAACtdMZkAAAEkUlEQVR4Xu3UhdJQZRhGUbkRkZQuARFEJJyxQEG6u7sbBOzu7u68P72M/c+cda5gz/rO+4y6+9EL/90VfqMEECDQCzx2Md4BAbXAaAG9wKX2DEc/LoAAgVzgcrsD9zwhgACBWuDJK/EOCBi8wJhaQMCYlVfbHRBAgMCYldfiM1wVB4wVQIDAquvtDox9SgCBWGBc/ROOgIAb7Q6Me1oAAQK5wM14B1YPPWB8LSBgBAg8257h+NV1wBoBBIYuMGHNrXYHJjwjgACBXOB2vANrBcQCE+snEDBx7Z32DPuAdbWAAAK9wHPtDty7rg5YL4AAgefjHVhfB2wQEAtMqp9AwKQNL7Q70AdsrAUEENj4YnyGdcDkPGBT/ASTBRDY9FK7A5PzgM21gIBaYIqAzS+3OzAlD9hSCwgg0Au8Eu/Aljhg6lYBBHKBV9sznLp18AHbagEBtcC0PuC1dgembRt8wPZaQACB7a/HOzD4gOk74icQQGD6jjfaHRAwfWf9BAJqgRk732zPUMCMXfUTCCCw6614BwTsrp+gDpgpoBd4u92BmbsHH7CnFhDQC7wTn+GeOGCWgL31EwjoBd5td2DWXgG1wL6hB8yuBUZAwHvtDszeJ6AW2C+AwPvxDuyPA+YIOFA/gYADH7RnOEdALnCw/gcGH3BfLXDfwQ/bHRDQCxyq/wEBvcBH8Q4cGnrA3Fpg7uH4CQSMAIGP2x2Ye1hALXBEQCww78gn7RkKIDDvaP0TCjj6abwDAmqB+XnAsfgnnC/g2GftDswXQOB4/RP2AZ+3Z3j/cQGDFzhRCwg48UW8AwIGL7DgZPwTClhw8st2BwQQWHCq/gkFnPqq3YEHBBA4Xf+EfcDX8RmeFkCgFjgTByzsA75pd2DhGQEEaoGzAr6Nd+Ds0AMW1QICFp2Lf8IREPBduwOLzgkYvMD5WqAOePD89+0ZCiDQC1yor6AP+CHegQsCYoHF9RP0ARfrJ+gDfmx3YPFFAQRqgUt5wE/tGT50SQCBwQtcrgUu/xzvgIDBCyypBfqAK/EZLrnyS7sDAggQWHK1PsOrv7Y78LAAArnAtfoKrv0Wn6EAArXA0jzgenyGS6//3u6AAAIElt6oz/DGH/EO1AHLBBDIBW7GZ7js5p/tDgggkAssr69g+bN/tWcogACBXuDW3/EODD5gRS0ggMCK2/+0OyCAAIFH7vzbnqEAAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgRqgf8BpZGU1FjF8PEAAAAASUVORK5CYII=&quot;) 0% 0% / 32px 100%;">
+        <canvas width="1054" height="943" style="width: 1054px; height: 943px;"></canvas></div>
+    <div id="cli_dialog_div"></div>
+    <div class="float-btn">
+        <a href="/">前端 <span>前端面试知识点概览</span></a>
     </div>
 </body>
 
