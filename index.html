@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>面试知识点仓库-夜学网</title>
+    <style>
+        .logo {
+            width: 300px;
+            height: 150px;
+            margin: 40px auto 20px;
+            text-align: center;
+            color: #484848;
+            font-size: 26px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .url {
+            text-align: center;
+            line-height: 20px;
+            color: #999;
+        }
+        .button{
+            text-align: center;
+            height: 100px;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+        .button a{
+            display: inline-block;
+            width: 180px;
+            height: 40px;
+            line-height: 40px;
+            cursor: pointer; 
+            text-decoration: none;
+            margin-right: 30px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .button a:hover{
+            color: #fff;
+            font-weight: 700;
+            border: 1px solid #4fc08d;
+            background: #4fc08d;
+        }
+        .button a{
+            color: #4fc08d;
+            font-weight: 700;
+            border: 1px solid #4fc08d;
+        }
+
+        #logo {
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 2s;
+            -moz-transition-property: -moz-transform;
+            -moz-transition-duration: 2s;
+            -webkit-animation: rotate 8s linear infinite;
+            -moz-animation: rotate 8s linear infinite;
+            -o-animation: rotate 8s linear infinite;
+            animation: rotate 8s linear infinite;
+        }
+        .detail{
+            border-top: 1px solid #ccc;
+            display: flex;
+            padding: 0 20px;
+        }
+        .detail>div{
+            padding:0 5%;
+        }
+        .detail h3{
+            text-align: center;
+            color: #4fc08d;
+        }
+        .detail p{
+            color: #999;
+            text-indent: 2em;
+        }
+        @-webkit-keyframes rotate {
+            from {
+                -webkit-transform: rotate(0deg)
+            }
+
+            to {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+        @-moz-keyframes rotate {
+            from {
+                -moz-transform: rotate(0deg)
+            }
+
+            to {
+                -moz-transform: rotate(359deg)
+            }
+        }
+
+        @-o-keyframes rotate {
+            from {
+                -o-transform: rotate(0deg)
+            }
+
+            to {
+                -o-transform: rotate(359deg)
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg)
+            }
+
+            to {
+                transform: rotate(359deg)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        面试知识点仓库
+        <img id="logo" src="./aiyexue.svg" alt="">
+    </div>
+    <p class="url">夜学网-www.aiyexue.com</p>
+    <div class="button">
+        <a href="/docs/web">前端</a>
+        <a href="/docs/java">JAVA</a>
+        <a href="/docs/Android">安卓</a>
+    </div>
+    <div class="detail">
+            <div>
+                <h3>只讲知识点</h4>
+                <p>该仓库资源没有大篇幅的讲解面试题，因为我们认为只有弄懂了各个知识点，才能解决面试题。所以以搜集面试知识点为核心，帮助大家能在平时学习中查漏补缺。</p>
+            </div>
+            <div>
+                    <h3>从初级到高级</h4>
+                    <p>该仓库资源涉及的知识点有基础，有深入，也有源码解析，网络知识。是你学习的好帮手，助你面试披荆斩棘。</p>
+            </div>
+            <div>
+                    <h3>持续更新</h4>
+                    <p>该仓库会持续更新下去，内容将会涵盖计算机通识，前端，后端，运维，系统设计，区块链等等。各位的支持是我们更新的动力，同时也欢迎有能力的小伙伴加入我们。</p>
+            </div>
+    </div>
+</body>
+
+</html>

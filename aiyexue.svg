@@ -1,0 +1,44 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" class="el-tooltip">
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="302" height="302" id="canvas_background" fill="none"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <rect x="2.000005" y="86.999999" width="281.000002" height="72.000001" fill="rgb(225,225,225,0)" id="svg_3" stroke="null"/>
+  <g stroke="null" fill="#ff6469" class="icon-svg-group iconsvg" id="svg_5">
+   <g stroke="null" class="iconsvg-imagesvg" id="svg_6">
+    <rect stroke="null" fill="#ff6469" fill-opacity="0" stroke-width="2" x="1.462796" y="0.462801" width="297.058086" height="299.117789" id="svg_7"/>
+    <g stroke="null" id="svg_16" transform="matrix(5.604869570904087,0,0,5.6437318568492785,-896.7020993937568,-723.0444664533115) ">
+     <svg stroke="null" x="160.247242" y="128.196606" width="53" height="53" class="imagesvg-svg" id="svg_1">
+      <g stroke="null" id="svg_2">
+       <svg stroke="null" viewBox="0 0 512 512" id="svg_17">
+        <path stroke="null" d="m155.612,214.308l0,-193.828c-62.264,26.515 -111.909,77.165 -137.144,140.068l137.143,137.143l0.001,-83.383z" fill="#afe164" id="svg_29"/>
+        <path stroke="null" d="m214.308,155.61l137.144,-137.142c-29.532,-11.886 -61.715,-18.468 -95.452,-18.468c-35.657,0 -69.577,7.314 -100.388,20.48l0,193.828l58.696,-58.698z" fill="#d7e664" id="svg_28"/>
+        <path stroke="null" d="m491.52,155.61l-193.828,0l58.697,58.698l137.143,137.143c11.886,-29.531 18.468,-61.714 18.468,-95.451c0,-35.657 -7.314,-69.577 -20.48,-100.39z" fill="#ffaa64" id="svg_27"/>
+        <path stroke="null" d="m356.388,297.692l0,193.828c62.263,-26.515 111.908,-77.165 137.143,-140.068l-137.143,-137.144l0,83.384z" fill="#ff6469" id="svg_26"/>
+        <path stroke="null" d="m297.692,356.388l-137.144,137.144c29.532,11.885 61.715,18.468 95.452,18.468c35.658,0 69.577,-7.314 100.388,-20.48l0,-193.828l-58.696,58.696z" fill="#c3b4fa" id="svg_25"/>
+        <path stroke="null" d="m214.308,356.388l-193.828,0c26.515,62.263 77.165,111.908 140.068,137.143l137.143,-137.143l-83.383,0z" fill="#7dd2f0" id="svg_24"/>
+        <path stroke="null" d="m155.612,297.692l-137.144,-137.144c-11.886,29.532 -18.468,61.715 -18.468,95.452c0,35.657 7.314,69.577 20.48,100.388l193.828,0l-58.696,-58.696z" fill="#7de6c3" id="svg_23"/>
+        <path stroke="null" d="m297.692,155.61l193.828,0c-26.515,-62.262 -77.165,-111.908 -140.068,-137.142l-137.144,137.142l83.384,0z" fill="#ffe669" id="svg_22"/>
+       </svg>
+      </g>
+     </svg>
+    </g>
+    <!---->
+   </g>
+   <g stroke="null" id="svg_18">
+    <g stroke="null" class="tp-name iconsvg-namesvg" id="svg_19">
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+     <!---->
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
